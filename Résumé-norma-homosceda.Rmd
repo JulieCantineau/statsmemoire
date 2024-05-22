@@ -15,32 +15,52 @@ Viabilité :
 Normalité : 0.03068
 Homoscédasticité : 0.9906
 
+Kruskal : 0.9889
+
 - 1h :
 
 Normalité : 0.01307
 Homoscédasticité : 0.9983
+
+Kruskal : 0.9587
 
 - 2h : 
 
 Normalité : 0.4524
 Homoscédasticité : 0.7477
 
+Kruskal : 0.7234
+Anova : 0.67
+
 - 4h : 
 
 Normalité : 0.00321
 Homoscédasticité : 0.9795
+
+Kruskal : 0.8516
 
 - 6h : 
 
 Normalité : 0.5587
 Homoscédasticité : 0.9523
 
+Kruskal : 0.9483
+Anova : 0.937
+
 - 24h :
 
 Normalité : 0.03068
 Homoscédasticité : 0.9906
 
+Kruskal : 0.8048
+
 - 48h : 
 
 Normalité : 0.8657
 Homoscédasticité : 0.1513
+
+Kruskal : 0.02069
+Significativé entre 5-75 et 25-75 mais pas entre CTL-75
+
+Anova : 0.00233
+CTl - 75 : 0.01827 *

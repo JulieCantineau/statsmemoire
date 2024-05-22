@@ -19,3 +19,11 @@ car::qqPlot(AnovaModel.Viab24h$residuals)
 
 shapiro.test(AnovaModel.Viab48h$residuals)
 car::qqPlot(AnovaModel.Viab48h$residuals)
+
+
+--------------------------------------------------
+  
+  
+  
+kruskal.test(Valeurs ~ Conditions, data = Viab48h)
+dunnTest(Valeurs ~ Conditions, data=Viab48h, method="hs")

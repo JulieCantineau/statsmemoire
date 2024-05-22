@@ -1,0 +1,46 @@
+---
+title: "Résumé resultats viabilité"
+output: pdf_document
+date: "2024-05-22"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Viabilité :
+
+- 30m : 
+
+Normalité : 0.03068
+Homoscédasticité : 0.9906
+
+- 1h :
+
+Normalité : 0.01307
+Homoscédasticité : 0.9983
+
+- 2h : 
+
+Normalité : 0.4524
+Homoscédasticité : 0.7477
+
+- 4h : 
+
+Normalité : 0.00321
+Homoscédasticité : 0.9795
+
+- 6h : 
+
+Normalité : 0.5587
+Homoscédasticité : 0.9523
+
+- 24h :
+
+Normalité : 0.03068
+Homoscédasticité : 0.9906
+
+- 48h : 
+
+Normalité : 0.8657
+Homoscédasticité : 0.1513

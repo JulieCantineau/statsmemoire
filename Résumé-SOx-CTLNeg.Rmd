@@ -4,6 +4,8 @@ output: pdf_document
 date: "2024-05-27"
 ---
 
+Stress Ox (normalisé sur viab + ctl -) :
+
 - 30m : 
 
 Normalité : 0.1352

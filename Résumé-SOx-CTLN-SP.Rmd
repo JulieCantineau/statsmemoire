@@ -1,0 +1,60 @@
+---
+title: "Résumé-SOx-CTLN-SP"
+output: pdf_document
+date: "2024-05-27"
+---
+Stress Ox (normalisé sur viab + ctl - + sans ctl +) :
+
+- 30m : 
+
+Normalité : 0.04872
+Homoscédasticité : 0.9993
+
+Kruskal : 0.9416
+
+- 1h :
+
+Normalité : 0.01857
+Homoscédasticité : 0.6874
+
+Kruskal : 0.6874
+
+- 2h : 
+
+Normalité : 0.1196
+Homoscédasticité : 0.9889
+
+Kruskal : 0.9505
+Anova : 0.986
+
+- 4h : 
+
+Normalité : 0.9451
+Homoscédasticité : 0.778
+
+Kruskal : 0.4632
+Anova : 0.489
+
+- 6h : 
+
+Normalité : 0.04506
+Homoscédasticité : 0.6722
+
+Kruskal : 0.7198
+
+
+- 24h :
+
+Normalité : 0.5686
+Homoscédasticité : 0.9602
+
+Kruskal : 0.7234
+Anova : 0.848
+
+- 48h : 
+
+Normalité : 0.08091
+Homoscédasticité : 0.9646
+
+Kruskal : 0.9059
+Anova : 0.977

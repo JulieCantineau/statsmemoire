@@ -1,0 +1,58 @@
+---
+title: "Résumé-SOx (ctl +)"
+output: pdf_document
+date: "2024-05-27"
+---
+Stress Ox (normalisé sur viab + ctl +) :
+
+- 30m : 
+
+Normalité : 0.1352
+Homoscédasticité : 0.8456
+
+Kruskal : 0.9445
+Anova : 0.976
+
+- 1h :
+
+Normalité : 0.006119
+Homoscédasticité : 0.9995
+
+Kruskal : 0.6795
+
+- 2h : 
+
+Normalité : 0.2479
+Homoscédasticité : 0.2263
+
+Kruskal : 0.46
+Anova : 0.173
+
+- 4h : 
+
+Normalité : 0.003232
+Homoscédasticité : 0.003784
+
+Kruskal : 0.6957
+
+- 6h : 
+
+Normalité : 0.1723
+Homoscédasticité : 0.6761
+
+Kruskal : 0.2869
+Anova : 0.175
+
+- 24h :
+
+Normalité : 0.005888
+Homoscédasticité : 0.004006
+
+Kruskal : 0.1636
+
+- 48h : 
+
+Normalité : 0.002911
+Homoscédasticité : 0.008694
+
+Kruskal : 0.7247

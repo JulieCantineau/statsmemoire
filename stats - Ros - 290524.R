@@ -3,7 +3,6 @@ library(tidyverse)
 library(rstatix)
 library(ggpubr)
 Ros1h <- read_excel("E:/Mémoire/Viab-SOx/1h/Ros1H.xlsx")
-View(Ros1h)
 
 Ros2h <- read_excel("E:/Mémoire/Viab-SOx/2h/Ros2H.xlsx")
 

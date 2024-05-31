@@ -179,3 +179,12 @@ res.aovRos30m
 
 mros30m <- Ros30mSC %>% tukey_hsd(Ros ~ Conditions)
 mros30m
+
+t.test(Ros1hSC$Ros, mu = 1)
+t.test(Ros2hSC$Ros, mu = 1)
+t.test(Ros4hSC$Ros, mu = 1)
+t.test(Ros6hSC$Ros, mu = 1)
+t.test(Ros24hSC$Ros, mu = 1)
+t.test(Ros48hSC$Ros, mu = 1)
+t.test(Ros30mSC$Ros, mu = 1)
+

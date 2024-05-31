@@ -147,7 +147,7 @@ mviab24h <- Viab24hSC %>% tukey_hsd(Viab ~ Conditions)
 mviab24h
 
 
-HViab48H <- bartlett.test(Viab ~ Conditions, data=Viab48hSC)
+HViab48H <- bartlett.test(Viab ~ Conditions, data=Viab48h)
 print(HViab48H)
 
 modelViab48h <- lm(Viab ~ Conditions, data = Viab48hSC)
@@ -155,14 +155,14 @@ ggqqplot(residuals(modelViab48h))
 
 shapiro.test(residuals(modelViab48h))
 
-Viab48hSC %>% 
+Viab48h %>% 
   group_by(Conditions) %>%
   identify_outliers(Viab)
 
-res.aovViab48h <- Viab48hSC %>% anova_test(Viab ~ Conditions)
+res.aovViab48h <- Viab48h %>% anova_test(Viab ~ Conditions)
 res.aovViab48h
 
-mviab48h <- Viab48hSC %>% tukey_hsd(Viab ~ Conditions)
+mviab48h <- Viab48h %>% tukey_hsd(Viab ~ Conditions)
 mviab48h
 
 
@@ -184,4 +184,13 @@ res.aovViab30m
 mviab30m <- Viab30mSC %>% tukey_hsd(Viab ~ Conditions)
 mviab30m
 
+t.test(Viab1hSC$Viab, mu = 1)
 
+t.test(Viab2hSC$Viab, mu = 1)
+
+t.test(Viab4hSC$Viab, mu = 1)
+t.test(Viab6hSC$Viab, mu = 1)
+
+t.test(Viab24hSC$Viab, mu = 1)
+
+t.test(Viab48hSC$Viab, mu = 1)

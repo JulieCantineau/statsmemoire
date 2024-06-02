@@ -2,6 +2,7 @@ library(readxl)
 library(tidyverse)
 library(rstatix)
 library(ggpubr)
+library(dunn.test)
 Ros1h <- read_excel("E:/Mémoire/Viab-SOx/1h/Ros1H.xlsx")
 
 Ros2h <- read_excel("E:/Mémoire/Viab-SOx/2h/Ros2H.xlsx")
@@ -84,7 +85,6 @@ mros2h
 
 
 
-
 HRos4H <- bartlett.test(Ros ~ Conditions, data=Ros4hSC)
 print(HRos4H)
 
@@ -102,6 +102,8 @@ res.aovRos4h
 
 mros4h <- Ros4hSC %>% tukey_hsd(Ros ~ Conditions)
 mros4h
+
+
 
 
 
@@ -124,6 +126,7 @@ mros6h <- Ros6hSC %>% tukey_hsd(Ros ~ Conditions)
 mros6h
 
 
+
 HRos24H <- bartlett.test(Ros ~ Conditions, data=Ros24hSC)
 print(HRos24H)
 
@@ -141,6 +144,8 @@ res.aovRos24h
 
 mros24h <- Ros24hSC %>% tukey_hsd(Ros ~ Conditions)
 mros24h
+
+
 
 
 HRos48H <- bartlett.test(Ros ~ Conditions, data=Ros48hSC)

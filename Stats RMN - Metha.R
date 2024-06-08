@@ -10,7 +10,7 @@ Metha <- read_excel("E:/Mémoire/stats-RMN-metha.xlsx",
 "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", 
 "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", 
 "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", 
-"numeric", "numeric", "numeric", "numeric", "numeric"))
+"numeric", "numeric", "numeric", "numeric"))
 
 MLac1 <- Metha %>%
   select(Conditions, Lactate)
@@ -181,11 +181,6 @@ MLac2 <- Metha %>%
 Lac2 <- wilcox_test(Lactate2 ~ Conditions, data = MLac2)
 Lac2
 
-MLac3 <- Metha %>%
-  select(Conditions, lactate3)
-
-Lac3 <- wilcox_test(lactate3 ~ Conditions, data = MLac3)
-Lac3
 
 MGluc8 <- Metha %>%
   select(Conditions, Glucose8)

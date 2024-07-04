@@ -49,23 +49,24 @@ Viab30mSC <- Viab30m[-1,]
 Viab30mSC <- Viab30mSC[-1,]
 Viab30mSC <- Viab30mSC[-1,]
 
-HViab1H <- bartlett.test(Viab ~ Conditions, data=Viab1hSC)
-print(HViab1H)
+HViab1H <- bartlett.test(Viab ~ Conditions, data=Viab1hSC) #Test de Bartlett pour 
+# voir si les données sont homoscédastiques (p-value < 0,5) 
+print(HViab1H) #Ca c'est pour afficher les valeurs du test généré juste au dessus
 
-modelViab1h <- lm(Viab ~ Conditions, data = Viab1hSC)
-ggqqplot(residuals(modelViab1h))
+modelViab1h <- lm(Viab ~ Conditions, data = Viab1hSC) #Création du modèle pour tester les résidus
+ggqqplot(residuals(modelViab1h)) #Visualisation graphique de la distribution des res 
 
-shapiro.test(residuals(modelViab1h))
+shapiro.test(residuals(modelViab1h)) #Test de Shapiro pour la normalité
 
 Viab1hSC %>% 
   group_by(Conditions) %>%
-  identify_outliers(Viab)
+  identify_outliers(Viab) #Test qui permet d'identifier les outliers
 
-res.aovViab1h <- Viab1hSC %>% anova_test(Viab ~ Conditions)
-res.aovViab1h
+res.aovViab1h <- Viab1hSC %>% anova_test(Viab ~ Conditions) #Test ANOVA vu que c'est paramétrique
+res.aovViab1h #Affichage des résultats obtenus 
 
-mviab1h <- Viab1hSC %>% tukey_hsd(Viab ~ Conditions)
-mviab1h
+mviab1h <- Viab1hSC %>% tukey_hsd(Viab ~ Conditions) #Post test de Tukey qui compare les groupes entre eux
+mviab1h #Affichage du résultat
 
 
 HViab2H <- bartlett.test(Viab ~ Conditions, data=Viab2hSC)
